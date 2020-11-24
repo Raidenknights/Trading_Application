@@ -14,21 +14,21 @@ class Company:
      comp={'APPLE':'AAPL','Microsoft Corp':'MSFT','TESLA':'TSLA'}
      # get data to Start_work class
      def get_intraday(name,duration):
-        ts = TimeSeries(key='A4GJGEAIETZ3UBQZ', output_format='pandas')
+        ts = TimeSeries(key='YOUR_OWN_API', output_format='pandas')
         data, metadata= ts.get_intraday(symbol=Company.comp[name],interval=duration,outputsize='full')
         return data;
     #get SMA using API
      def get_SMA(name,duration,sr_type):
-        ti=TechIndicators(key='A4GJGEAIETZ3UBQZ',output_format='pandas')
+        ti=TechIndicators(key='YOUR_OWN_API',output_format='pandas')
         data_sma,meta_data_sma=ti.get_sma(symbol=Company.comp[name],interval=duration,time_period='60',series_type=sr_type)
         return data_sma
     #get WMA data using API
      def get_WMA(name,duration,sr_type):
-        ti=TechIndicators(key='A4GJGEAIETZ3UBQZ',output_format='pandas')
+        ti=TechIndicators(key='YOUR_OWN_API',output_format='pandas')
         data_wma,meta_data_wma=ti.get_wma(symbol=Company.comp[name],interval=duration,time_period='60',series_type=sr_type)
         return data_wma        
      def get_EMA(name,duration,sr_type):
-        ti=TechIndicators(key='A4GJGEAIETZ3UBQZ',output_format='pandas')
+        ti=TechIndicators(key='YOUR_OWN_API',output_format='pandas')
         data_wma,meta_data_wma=ti.get_wma(symbol=Company.comp[name],interval=duration,time_period='60',series_type=sr_type)
         
         
