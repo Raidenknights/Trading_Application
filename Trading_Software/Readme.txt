@@ -17,6 +17,7 @@ API Limitations:
 for Free it can only give 5 requests per minute and 500 requests a day and there is no LIVE DATA
 AVAILABLE FOR FREE. it costs around Rs.20,000 for  live data for a week.
 so if you  have premium API then just change the Code in the file Named: Select_company.py
+GOTO ALPHA VANTAGE FOR YOUR FREE API.
 
 ----------------------------HOW TO USE----------------------------------------------------------
 1. Open any editor and Run the file Named :prototype.py
